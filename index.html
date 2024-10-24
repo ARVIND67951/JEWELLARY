@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Jewellery</title>
+    <style>
+        #logo-name{
+            width: 90%;
+            font-size: 20px;
+            color: rgba(26, 26, 27, 0.534);
+            margin: 0px auto;
+            background-color: rgba(255, 192, 203, 0.534);
+            text-shadow: rgb(168, 65, 160) 1px 1px 10px,0 0 1em blue,0 0 0.2em aqua;
+            font-style:italic;
+            color: rgba(202, 198, 198, 0.356);
+        }
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      
+      /* parent container */
+     
+      /* navbar */
+      nav {
+        height: 50px;
+        width: 90%;
+        padding: 2px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 30px;
+        margin: 0px auto;
+        background-color: rgba(144, 107, 156, 0.932);
+      }
+      /* Content */
+      
+      nav a {
+        text-decoration: none;
+        color: rgb(95, 100, 100);
+      }
+      
+      /* hover effect */
+      nav a:hover {
+        color: black;
+        transition: all ease 0.5s;
+      }
+      
+      /* Responsive media query */
+      
+      @media only screen and (max-width: 700px) {
+        main {
+          background-color: lightblue;
+        }
+        nav {
+          width: 90%;
+          font-size: 20px;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+          main {
+            background-color: lightblue;
+          }
+          nav {
+            width: 90%;
+            font-size: 16px;
+          }
+        }
+        /* ---------------------------------------------slider-------------------------- */
+        .slider {
+    position: relative;
+    max-width: 100%px;
+    height: 500px;
+    margin:  0px 50px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: -50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.div100light{
+			width:90%;				
+			background-color:#dfcaca;
+			margin: 10px  auto;	
+            padding: 20px 0px;
+		}
+.div90{
+  
+			width:100%;			
+			margin:0px auto;
+			display:flex;
+		}
+        .ser2{
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+		.ser1{
+			margin-right: 0.5%;
+		}
+		.ser3{
+			margin-left: 0.5%;
+		}
+        .social-whatsapp {
+    position: fixed;
+    bottom: 10%;
+    right: 0.9%;
+    z-index: 1;
+    }
+  
+    /*------------------------------------ footer css---------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+.main-footer {
+  padding: 2px 10px;
+  text-align: left;
+  display: flex;
+  margin: 0px auto;
+  width: 90%;
+  justify-content: space-evenly;
+  background-color: #1e1f1f;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #ffffffcc;
+  text-decoration:none;
+}
+
+footer {
+  background-color: #19302E;
+  border-top: 1px solid #6EB981;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px auto;
+  width: 90%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.logoinfo{
+    text-align: left;
+    width: 250px;
+    
+}
+.logoinfo a{
+    display: flex;
+}
+.logoinfo p {
+  color: #6EB981;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.sociallogos{
+    
+  padding:20px 0;
+}
+.logobox{
+    display: inline-flex;
+}
+.sociallogos .logobox a{
+  padding:0 10px;
+  text-decoration:none;
+  color:#ffffff;
+  font-size:22px;
+  display: flex;
+}
+
+.com ul li{
+  padding:5px 0;
+}
+
+@media only screen and (max-width: 749px) {
+  .main-footer {
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .info{
+      padding:20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .sociallogos{
+    padding:20px 0;
+  }
+  .com{
+    padding:20px 0;
+  } 
+
+}
+        </style>
+</head>
+<body>
+    <div id="logo-name">
+       
+        <marquee behavior="alternate" direction="right"><pre><h1>SD  JEWELLERY   DESIGNS</h1></pre></marquee>
+    </div>
+    <nav>
+            <!--content -->
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Project</a>
+           
+    </nav>
+    <!-- bannner  -->
+     <div id="banner">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="1.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="b2.avif" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="b3.avif" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="b4.jpg" alt="Image 2">
+                </div>
+                
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+     </div>
+     <div class="div100light">
+     <h1 style="text-align: center; font-style: italic;color: rgb(49, 165, 111); font-size: 25px;">DESIGN BY CATEGORY</h1>
+     <div class="div90">	
+        
+        		
+        <div class="ser1 div30">
+            <img src="c1.avif" style="height:auto;width:100%;">
+            
+        </div>	
+        <div class="ser2 div30">
+            <img src="c2.avif" style="height:auto;width:100%;">
+           
+        </div>
+        <div class="ser3 div30">
+            <img src="c3.avif" style="height:auto;width:100%;">
+            
+        </div>	
+    </div>
+     </div>
+     <div class="div100light">
+        <h1 style="text-align: center; font-style: italic;color: rgb(53, 184, 71); font-size: 25px;">DESIGN BY CATEGORY  PENDEL</h1>
+        <div class="div90" style="margin: 0px 10px;">	
+           
+                   
+           <div class="ser1 div30">
+               <img src="p1.avif" style="height:380px;width:auto;">
+               
+           </div>	
+           <div class="ser2 div30">
+               <img src="p2.avif" style="height:380px;width:auto;">
+              
+           </div>
+           <div class="ser3 div30">
+               <img src="p3.webp" style="height:380px;width:250px;">
+               
+           </div>	
+       </div>
+       <div class="div90" style="margin: 10px 10px;">	
+           
+                   
+        <div class="ser1 div30">
+            <img src="p7.webp" style="height:380px;width:auto;">
+            
+        </div>	
+        <div class="ser2 div30">
+            <img src="p5.webp" style="height:380px;width:300px;">
+           
+        </div>
+        <div class="ser3 div30">
+            <img src="p6.webp" style="height:380px;width:auto;">
+            
+        </div>	
+    </div>
+        </div>
+       
+            <div class="div100light">
+                <h1 style="text-align: center; font-style: italic;color: rgb(62, 208, 228); font-size: 25px;">DESIGN BY CATEGORY  EARINGS</h1>
+                <div class="div90" style="margin: 0px 10px;">	
+                   
+                           
+                   <div class="ser1 div30">
+                       <img src="e1.jpg" style="height:300px;width: 260px;;">
+                       
+                   </div>	
+                   <div class="ser2 div30">
+                       <img src="e2.jpg" style="height:300px;width:260px; margin: 0px 20px;">
+                      
+                   </div>
+                   <div class="ser3 div30">
+                       <img src="e3.jpg" style="height:300px;width:250px;">
+                       
+                   </div>	
+               </div>
+               <div class="div90" style="margin: 10px 10px;width: 90%; ">	
+                   
+                           
+                <div class="ser1 div30">
+                    <img src="e11.jpg" style="height:320px;width:260px;">
+                    
+                </div>	
+                <div class="ser2 div30">
+                    <img src="e12.jpg" style="height:320px;width:260px;margin: 0px 20px;">
+                   
+                </div>
+                <div class="ser3 div30">
+                    <img src="e13.jpg" style="height:320px;width:260px;">
+                    
+                </div>	
+            </div>
+                </div>
+                
+                    <div class="div100light">
+                        <h1 style="text-align: center; font-style: italic;color: rgb(105, 164, 172); font-size: 25px;">DESIGN BY CATEGORY  BANGLES</h1>
+                        <div class="div90" style="margin: 0px 10px;">	
+                           
+                                   
+                           <div class="ser1 div30">
+                               <img src="a1.jpg" style="height:300px;width: 260px;;">
+                               
+                           </div>	
+                           <div class="ser2 div30">
+                               <img src="a2.jpg" style="height:300px;width:260px; margin: 0px 20px;">
+                              
+                           </div>
+                           <div class="ser3 div30">
+                               <img src="ba3.jpg" style="height:300px;width:250px;">
+                               
+                           </div>	
+                       </div>
+                       <div class="div90" style="margin: 10px 10px;width: 90%; ">	
+                           
+                                   
+                        <div class="ser1 div30">
+                            <img src="ba4.jpg" style="height:320px;width:260px;">
+                            
+                        </div>	
+                        <div class="ser2 div30">
+                            <img src="a5.jpg" style="height:320px;width:260px;margin: 0px 20px;">
+                           
+                        </div>
+                        <div class="ser3 div30">
+                            <img src="ba6.jpg" style="height:320px;width:260px;">
+                            
+                        </div>	
+                    </div>
+                        </div>
+                        <div class="div100light">
+                            <h1 style="text-align: center; font-style: italic;color: rgb(105, 164, 172); font-size: 25px;">DESIGN BY CATEGORY  RING</h1>
+                            <div class="div90" style="margin: 0px 10px;">	
+                               
+                                       
+                               <div class="ser1 div30">
+                                   <img src="r1.jpg" style="height:300px;width: 260px;;">
+                                   
+                               </div>	
+                               <div class="ser2 div30">
+                                   <img src="r2.jpg" style="height:300px;width:260px; margin: 0px 20px;">
+                                  
+                               </div>
+                               <div class="ser3 div30">
+                                   <img src="r3.jpg" style="height:300px;width:250px;">
+                                   
+                               </div>	
+                           </div>
+                           <div class="div90" style="margin: 10px 10px;width: 90%; ">	
+                               
+                                       
+                            <div class="ser1 div30">
+                                <img src="r4.jpg" style="height:320px;width:260px;">
+                                
+                            </div>	
+                            <div class="ser2 div30">
+                                <img src="r5.jpg" style="height:320px;width:260px;margin: 0px 20px;">
+                               
+                            </div>
+                            <div class="ser3 div30">
+                                <img src="r6.jpg" style="height:320px;width:260px;">
+                                
+                            </div>	
+                        </div>
+                            </div>
+                            <!-- ---------------------WHATSAPP ICONS-------------------------- -->
+                            <div class="social-whatsapp">
+                                <div class="col mb-3">
+                                    <a href="https://api.whatsapp.com/send/?phone=9785508349&text=goodcontect&type=phone_number&app_absent=0" style="display:contents;margin-bottom:20px;">
+                            <img class="icon-shadow" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-64.png" style="height:38px;width:auto;margin-bottom:20px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="tel:+91-9785508349" style="display:contents;">
+                                        <img class="icon-shadow" src="https://cdn0.iconfinder.com/data/icons/real-estate-line-color-1/256/Call-64.png" style="height:38px;width:auto;"></a>
+                                </div>
+                            </div>
+                          
+                                <!-- --------------------footer------------------------------- -->
+                                
+<section id="footer">
+    <div class="main-footer">
+      <div class="logoinfo" data-aos="fade-up">
+        <img src="loho1.png" alt="" style="width: 200px;"><br>
+                                <p style="font-size: 20px; font-style: italic;color: #dfcaca;">   Director By,<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Ramcharan Tiwari
+                                
+                                </p>
+      </div>
+    <div class="com " data-aos="fade-up">
+      <h1>About</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="info" data-aos="fade-up">
+      <h1>Social Media</h1>
+      <div class="sociallogos">
+        <div class="logobox" >
+          <a href="#"  ><img src="instagram.webp" alt="" style="width: 50px; height: auto; border-radius: 50%;"></a>
+          <a href="#"  ><img src="facebook.webp" alt="" style="width: 50px; height: auto; border-radius: 50%;"></a>
+          <a href="+91-9785508349" ><img src="whatsapp.webp" alt="" style="width: 50px; height: auto; border-radius: 50%;"></a>
+          <a href="#" ><img src="youtube.webp" alt="" style="width: 50px; height: auto; border-radius: 50%;"></a>
+        </div>
+        <div class="responsive-map" style="width: 100px; height: 100px;">
+            <iframe src="   https://www.google.com/maps/place/SD+Jewellery+Design/@26.8074487,75.8187281,870m/data=!3m2!1e3!4b1!4m6!3m5!1s0x396dc90a68e44e75:0xa1d443e46266d472!8m2!3d26.8074439!4d75.8213084!16s%2Fg%2F11s8jtqj11?entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D " width="200" height="150" frameborder="0" style="border:0 ;margin-left: 50px;" allowfullscreen></iframe>
+            </div>
+      </div>
+    </div>
+    </div>
+  <footer>Copyright © 2024 SD Jewellery Designs | All Rights Reserved | Developed By : <a href="#" style="color: black;color: rgb(58, 58, 37);">Er.Arvind</a></footer>
+  </section>
+    <!-- script -->
+     <script>
+         let currentSlide = 0;
+const slideInterval = 3000; // Change slide every 3 seconds
+let slideTimer;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+    
+    const slidesContainer = document.querySelector('.slides');
+    slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+    resetTimer(); // Reset the timer whenever the user manually changes the slide
+}
+
+function startSlideShow() {
+    slideTimer = setInterval(() => {
+        changeSlide(1); // Move to the next slide
+    }, slideInterval);
+}
+
+function resetTimer() {
+    clearInterval(slideTimer); // Clear the existing timer
+    startSlideShow(); // Restart the timer
+}
+
+// Automatically show the first slide and start the slideshow
+showSlide(currentSlide);
+startSlideShow();
+     </script>
+</body>
+</html>
